@@ -8,7 +8,7 @@ screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("Conways game of life")
 clock = pygame.time.Clock()
 
-cell_size = 20
+cell_size = 7
 
 num_hor_cells = int(WINDOW_WIDTH / cell_size)
 num_vert_cells = int(WINDOW_HEIGHT / cell_size)
@@ -73,10 +73,10 @@ while running:
             for p in range(num_vert_cells):
                 if not cells[q][p] and count_surrounding_cells(q, p) == 3:
                     cells[q][p] = True
-                if cells[q][p]:
-                    if count_surrounding_cells(q, p) < 2:
+                elif cells[q][p]:
+                    if count_surrounding_cells(q, p) <= 1:
                         cells[q][p] = False
-                    elif count_surrounding_cells(q, p) > 3:
+                    if count_surrounding_cells(q, p) > 3:
                         cells[q][p] = False
 
     if True: #displaying
