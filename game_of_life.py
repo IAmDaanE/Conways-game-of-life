@@ -59,14 +59,22 @@ while running:
         if event.type == pygame.QUIT:
             running = False
         if current_mode == "selecting":
-            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                x = pygame.mouse.get_pos()[0]
-                y = pygame.mouse.get_pos()[1]
-                cells[int(x / cell_size)][int(y / cell_size)] ^= True
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_s:
-                    print("lkdjqmlsdkjmqsdlkj")
                     current_mode = "simulating"
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_r:
+                current_mode = "selecting"
+                cells = []
+                for i in range(int(WINDOW_WIDTH / cell_size)):
+                    cells.append([])
+                    for j in range(int(WINDOW_HEIGHT / cell_size)):
+                        cells[i].append(False)
+
+    if pygame.mouse.get_pressed()[0]: #[left button, scroll wheel, right button]
+        x = pygame.mouse.get_pos()[0]
+        y = pygame.mouse.get_pos()[1]
+        cells[int(x / cell_size)][int(y / cell_size)] = True
     
     if current_mode == "simulating":
         for q in range(len(cells)):
