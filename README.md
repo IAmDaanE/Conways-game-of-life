@@ -2,6 +2,10 @@
 
 A clone of the well known simulation, select tiles to be alive in the beginning and watch the virus either spread out or go extinct. Written in python with pygame.
 
+---
+
+<img width="1194" height="812" alt="image" src="https://github.com/user-attachments/assets/784b7fb3-9a59-4ed4-85f8-f3ba8ef837e5" />
+
 ## Getting Started
 
 ### Getting the Source
