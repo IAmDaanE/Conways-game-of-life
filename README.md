@@ -19,7 +19,8 @@ Requirements: You must have Python 3.6 or higher.
 2. Navigate to that directory in a terminal.
 3. In a venv or the global python version install the needed libraries.
     ```
-    pip install -r requirements.txt
+    pip install -r requirements.
+    txt
     ```
 4. Run the program.
     ```
