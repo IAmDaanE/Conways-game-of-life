@@ -18,7 +18,7 @@ git clone git@github.com:IAmDaanE/Conways-game-of-life.git
 
 ### Running the Program
 
-Requirements: You must have Python 3.6 or higher.
+Requirements: You must have Python 3.10 - 3.13.
 1. Clone the repository or download the zip and unpack it to your directory of choice.
 2. Navigate to that directory in a terminal.
 3. In a venv or the global python version install the needed libraries.
