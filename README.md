@@ -8,33 +8,26 @@ A clone of the well known simulation, select tiles to be alive in the beginning 
 
 ## Getting Started
 
-### Getting the Source
-
-This project is [hosted on GitHub](https://github.com/IAmDaanE/Conways-game-of-life). You can download the zip or clone this project directly using this command:
-
-```
-git clone git@github.com:IAmDaanE/Conways-game-of-life.git
-```
-
 ### Running the Program
 
-Requirements: You must have Python 3.10 - 3.13.
-1. Clone the repository or download the zip and unpack it to your directory of choice.
-2. Navigate to that directory in a terminal.
-3. In a venv or the global python version install the needed libraries.
+**Requires:** Python 3.9 - 3.14
+1. Install the required libraries, preferably in a venv.
+
     ```
     pip install -r requirements.txt
     ```
-4. Run the program.
+2. Run the program.
+
     ```
     python game_of_life.py
     ```
 
 ### Usage
 
-* Click on or drag over tiles to make them live.
+There are two phases: the selecting and the simulating phase.
+* Click on or drag over tiles during the selecting phase to make them live.
 * Press `S` while in the selecting phase to start the simulation.
-* Press `R` to reset and go to the selecting phase.
+* Press `R` to reset and go back to the selecting phase.
 
 ## License
 
