@@ -1,6 +1,6 @@
 # Conways Game of Life
 
-A clone of the well known simulation, select tiles to be alive in the beginning and watch the virus either spread out or go extinct. Written in python with pygame.
+A clone of the well known cellular automata simulation, select tiles to be alive in the beginning and watch the virus either spread out or go extinct. Written in python with pygame.
 
 ---
 
