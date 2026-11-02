@@ -4,7 +4,7 @@ WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
 
 pygame.init()
-screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT), pygame.SCALED | pygame.RESIZABLE)
 pygame.display.set_caption("Conways game of life")
 clock = pygame.time.Clock()
 
